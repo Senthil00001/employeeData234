@@ -4,6 +4,7 @@ import 'package:sqflite/sqflite.dart';
 import 'package:path/path.dart';
 import 'employee_add.dart';
 
+
 class EmployeeListScreen extends StatefulWidget {
   @override
   _EmployeeListScreenState createState() => _EmployeeListScreenState();
@@ -222,21 +223,21 @@ class _EmployeeListScreenState extends State<EmployeeListScreen> {
                           children: [
                             Text(
                               employee.name,
-                              style: TextStyle(color: Colors.black, fontSize: 14),
+                              style: TextStyle(color: Colors.black, fontSize: 18),
                             ),
                             Text(
                               employee.role,
-                              style: TextStyle(color: Colors.grey, fontSize: 12),
+                              style: TextStyle(color: Colors.grey, fontSize: 15),
                             ),
                             Row(
                               children: [
                                 Text(
                                   DateFormat('dd MMM yyyy').format(employee.startDate),
-                                  style: TextStyle(color: Colors.grey, fontSize: 12),
+                                  style: TextStyle(color: Colors.grey, fontSize: 15),
                                 ),
                                 Text(
                                   DateFormat(' - dd MMM yyyy').format(employee.endDate!),
-                                  style: TextStyle(color: Colors.grey, fontSize: 12),
+                                  style: TextStyle(color: Colors.grey, fontSize: 15),
                                 ),
                               ],
                             ),
